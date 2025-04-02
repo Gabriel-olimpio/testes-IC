@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "9fc997bc-5221-439f-94a9-5d686d480999",
+		"name": "Teste API Flask - Operadoras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36226021"
+	},
+	"item": [
+		{
+			"name": "Buscar Operadora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/buscar?termo=odontologia&termo=saude&termo=3s&termo=advance",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "odontologia",
+							"description": "Termo de busca"
+						},
+						{
+							"key": "termo",
+							"value": "saude",
+							"description": "Termo de busca"
+						},
+						{
+							"key": "termo",
+							"value": "3s",
+							"description": "Termo de busca"
+						},
+						{
+							"key": "termo",
+							"value": "advance"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
