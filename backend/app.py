@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 import pandas as pd
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 csv_path = "Relatorio_cadop.csv"
 df = pd.read_csv(csv_path, encoding="utf-8", delimiter=";")
