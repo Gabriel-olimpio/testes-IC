@@ -1,6 +1,7 @@
 # Testes de Nivelamento da Intuitive Care
 
-Os testes 1 e 2 se encontram na branch ```main```. Já o teste 4 está na outra branch do repositório, na qual se chama ``` test4```
+### Aviso: 
+- Os testes 1 e 2 se encontram na branch ```main```. Já o teste 4 está na outra branch do repositório, na qual se chama ```test4```
 
 # 📋 Testes 1 e 2 - IntuitiveCare
 
@@ -16,8 +17,8 @@ Repositório contendo as soluções para os Testes 1 (Web Scraping) e 2 (Transfo
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/Gabriel-olimpio/testes-ic.git
-cd Testes-Intuitive
+git clone https://github.com/Gabriel-olimpio/testes-IC.git
+cd repositorio
 ```
 
 ### 2. Crie e ative um ambiente virtual (recomendado)
