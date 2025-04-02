@@ -14,7 +14,7 @@ Este projeto é uma aplicação web que permite a busca de operadoras a partir d
 ### 1️⃣ Clonar o Repositório
 ```bash
     git clone https://github.com/Gabriel-olimpio/testes-IC.git
-    cd Testes_Intuitive
+    cd repositorio
 ```
 
 ### 2️⃣ Configurar o Backend (Flask)
