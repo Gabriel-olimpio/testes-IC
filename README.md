@@ -1,85 +1,62 @@
-# Testes de Nivelamento da Intuitive Care
+# Teste 4: Busca de Operadoras com Flask e Vue.js
 
-Os testes 1 e 2 se encontram na branch ```main```. Já o teste 4 está na outra branch do repositório, na qual se chama ``` test4```
+Este projeto é uma aplicação web que permite a busca de operadoras a partir de um arquivo CSV, utilizando um backend em Flask e um frontend em Vue.js.
 
-# 📋 Testes 1 e 2 - IntuitiveCare
+## 📌 Tecnologias Utilizadas
+- **Backend:** Flask (Python)
+- **Frontend:** Vue.js com Vite
+- **Dados:** CSV processado com Pandas
+- **Requisições HTTP:** Axios
+---
 
-Repositório contendo as soluções para os Testes 1 (Web Scraping) e 2 (Transformação de Dados) do processo seletivo da IntuitiveCare.
+## 🚀 Como Rodar o Projeto
 
-## 🛠️ Pré-requisitos
-
-- Python 3.8+
-- pip (gerenciador de pacotes do Python)
-- Git (opcional)
-
-## ⚙️ Configuração do Ambiente
-
-### 1. Clone o repositório
+### 1️⃣ Clonar o Repositório
 ```bash
-git clone https://github.com/Gabriel-olimpio/testes-ic.git
-cd Testes-Intuitive
+    git clone https://github.com/Gabriel-olimpio/testes-IC.git
+    cd Testes_Intuitive
 ```
 
-### 2. Crie e ative um ambiente virtual (recomendado)
+### 2️⃣ Configurar o Backend (Flask)
+#### Criar e ativar um ambiente virtual:
 ```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Linux/Mac
+cd backend
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
 ```
 
-### 3. Instale as dependências
+#### Instalar as dependências:
 ```bash
 pip install -r requirements.txt
 ```
 
-## 📂 Estrutura do Projeto
-```
-/
-├── teste1/              # Código do Teste 1 - Web Scraping
-│   ├── teste_1.py         # Script principal
-│   ├── anexos/          # PDFs baixados (gerado automaticamente)
-│   
-│
-├── teste2/              # Código do Teste 2 - Transformação de Dados
-│   ├── teste_2.py          # Script principal
-│   ├── data/            # Arquivos CSV (gerados automaticamente)
-│   
-│
-├── README.md            # Este arquivo
-└── requirements.txt     # Dependências gerais
-```
-
-## 🚀 Como Executar
-
-### Teste 1 - Web Scraping
+#### Executar o backend:
 ```bash
-python teste_1.py
+python app.py
 ```
+O servidor Flask rodará em `http://127.0.0.1:5000/`.
 
-**Saída esperada:**
-- PDFs dos Anexos I e II baixados na pasta `anexos/`
-- Arquivo `Teste_[Nome].zip` com os PDFs compactados
-
-### Teste 2 - Transformação de Dados
+### 3️⃣ Configurar o Frontend (Vue.js)
+#### Instalar as dependências:
 ```bash
-python teste_2.py
+cd ../frontend
+npm install
 ```
 
-**Saída esperada:**
-- Arquivo `rol_procedimentos.csv` com os dados transformados
-- Arquivo `Teste_[Nome].zip` com o CSV compactado
+#### Rodar o frontend:
+```bash
+npm run dev
+```
+O frontend rodará em `http://localhost:5173/`.
 
-## 📦 Dependências
+---
 
-### Dependências Gerais (raiz do projeto)
-- `pdfkit==1.0.0`
-- `tabula-py==2.7.0`
-- `beautifulsoup4==4.13.3`
-- `pandas==2.2.3`
-- `requests==2.32.3`
-- `tabula-py==2.10.0`
+## 🔥 Testando a API com Postman
+1. Importe a coleção do Postman (`Teste API Flask - Operadoras.postman_collection.json`)
+2. Utilize a rota:
+   ```bash
+   GET http://127.0.0.1:5000/buscar?termo=exemplo
+   ```
 
+---
