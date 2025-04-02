@@ -1,3 +1,4 @@
+# Teste 2 Transformação de Dados
 import tabula
 import pandas as pd
 import zipfile
@@ -7,7 +8,7 @@ def extract_tables():
     try:
         # Extrai todas as tabelas do PDF
         tables = tabula.read_pdf(
-            "Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf",
+            "pdf_temp/Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf",
             pages="all",
             multiple_tables=True,
             lattice=True
